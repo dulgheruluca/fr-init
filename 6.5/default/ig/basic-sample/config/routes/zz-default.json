@@ -1,0 +1,57 @@
+{
+  "name" : "zz-default-route",
+  "condition" : "${matches(request.uri.path, '(/home|/login)')}",
+  "baseURI" : "http://18.211.177.234:9091",
+  "capture" : [ "response", "request" ],
+  "handler" : "Chain",
+  "heap" : [ {
+    "name" : "Chain",
+    "type" : "Chain",
+    "config" : {
+      "filters" : [ "AssignmentFilter-ChangeUriPath", "ChangeHostFilter" ],
+      "handler" : "ReverseProxyHandler"
+    }
+  }, {
+    "name" : "AssignmentFilter-ChangeUriPath",
+    "type" : "AssignmentFilter",
+    "config" : {
+      "onRequest" : [ {
+        "target" : "${request.uri.path}",
+        "value" : "${split(request.uri.path, '/openig')[1]}"
+      } ]
+    }
+  }, {
+    "name" : "ChangeHostFilter",
+    "type" : "HeaderFilter",
+    "config" : {
+      "messageType" : "REQUEST",
+      "remove" : [ "host" ],
+      "add" : {
+        "host" : [ "18.211.177.234" ]
+      }
+    }
+  }, {
+    "name" : "ReverseProxyHandler",
+    "type" : "ReverseProxyHandler",
+    "config" : {
+      "connectionTimeout" : "60 seconds",
+      "soTimeout" : "unlimited"
+    },
+    "capture" : [ "response", "request" ]
+  }, {
+    "name" : "capture",
+    "type" : "CaptureDecorator",
+    "config" : {
+      "captureEntity" : true,
+      "captureContext" : true
+    }
+  }, {
+    "name" : "ForgeRockClientHandler",
+    "type" : "Chain",
+    "config" : {
+      "filters" : [ "TransactionIdOutboundFilter" ],
+      "handler" : "ClientHandler"
+    },
+    "capture" : [ "response", "request" ]
+  } ]
+}
