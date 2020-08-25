@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "realm" : "/bootcamp",
-    "amsterVersion" : "6.5.2.3",
+    "amsterVersion" : "6.5.2",
     "entityType" : "SuccessURL",
     "entityId" : "f5fc9120-0caf-423c-a4e0-71470a4d24bb",
     "pathParams" : { }

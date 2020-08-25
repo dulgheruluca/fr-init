@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "realm" : "/bootcamp",
-    "amsterVersion" : "6.5.2.3",
+    "amsterVersion" : "6.5.2",
     "entityType" : "SocialFacebook",
     "entityId" : "e60ba563-00ab-49bf-bca7-6c8b60f36aeb",
     "pathParams" : { }
