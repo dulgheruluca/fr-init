@@ -1,0 +1,18 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2.3",
+    "entityType" : "AnonymousUserMapping",
+    "entityId" : "3320e0b0-592f-4888-998f-899733e7c98b",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "3320e0b0-592f-4888-998f-899733e7c98b",
+    "anonymousUserName" : "anonymous",
+    "_type" : {
+      "_id" : "AnonymousUserNode",
+      "name" : "Anonymous User Mapping",
+      "collection" : true
+    }
+  }
+}

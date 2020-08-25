@@ -1,0 +1,76 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2.3",
+    "entityType" : "AuthTree",
+    "entityId" : "exerciseTree",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "exerciseTree",
+    "nodes" : {
+      "c62ad837-0b4c-459e-acef-8402f746f6e9" : {
+        "displayName" : "Check Device Type",
+        "nodeType" : "CheckDeviceType",
+        "connections" : {
+          "false" : "e301438c-0bd0-429c-ab0c-66126501069a",
+          "true" : "dda7bd1e-6c32-4cc0-bfaf-492fe518940d"
+        }
+      },
+      "14f679b6-8c61-4c94-81c2-d8cf5cf7e25d" : {
+        "displayName" : "Username Collector",
+        "nodeType" : "UsernameCollectorNode",
+        "connections" : {
+          "outcome" : "2f7d236c-4e91-4887-a883-54ba46b75910"
+        }
+      },
+      "2f7d236c-4e91-4887-a883-54ba46b75910" : {
+        "displayName" : "Password Collector",
+        "nodeType" : "PasswordCollectorNode",
+        "connections" : {
+          "outcome" : "c62ad837-0b4c-459e-acef-8402f746f6e9"
+        }
+      },
+      "dda7bd1e-6c32-4cc0-bfaf-492fe518940d" : {
+        "displayName" : "Data Store Decision",
+        "nodeType" : "DataStoreDecisionNode",
+        "connections" : {
+          "true" : "0f66e553-1865-4cc0-85ae-e485cef5e9cb",
+          "false" : "e301438c-0bd0-429c-ab0c-66126501069a"
+        }
+      },
+      "872bf986-1f95-4c25-8706-f093ab40f1f4" : {
+        "displayName" : "Check Phone Number",
+        "nodeType" : "CheckPhoneNumber",
+        "connections" : {
+          "not_found" : "2fc76ccd-6dd5-463e-b831-c3ef244b8b2b",
+          "found" : "89975f6f-ef9a-4d17-8104-d3e91e9d2dab"
+        }
+      },
+      "0f66e553-1865-4cc0-85ae-e485cef5e9cb" : {
+        "displayName" : "Collector Phone Number",
+        "nodeType" : "CollectorPhoneNumber",
+        "connections" : {
+          "outcome" : "872bf986-1f95-4c25-8706-f093ab40f1f4"
+        }
+      },
+      "2fc76ccd-6dd5-463e-b831-c3ef244b8b2b" : {
+        "displayName" : "Retry Limit Decision",
+        "nodeType" : "RetryLimitDecisionNode",
+        "connections" : {
+          "Retry" : "0f66e553-1865-4cc0-85ae-e485cef5e9cb",
+          "Reject" : "e301438c-0bd0-429c-ab0c-66126501069a"
+        }
+      },
+      "89975f6f-ef9a-4d17-8104-d3e91e9d2dab" : {
+        "displayName" : "Check Active User",
+        "nodeType" : "CheckActiveUser",
+        "connections" : {
+          "active" : "70e691a5-1e33-4ac3-a356-e7b6d60d92e0",
+          "inactive" : "e301438c-0bd0-429c-ab0c-66126501069a"
+        }
+      }
+    },
+    "entryNodeId" : "14f679b6-8c61-4c94-81c2-d8cf5cf7e25d"
+  }
+}

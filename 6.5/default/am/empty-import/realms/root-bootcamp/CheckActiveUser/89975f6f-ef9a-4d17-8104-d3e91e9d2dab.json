@@ -1,0 +1,18 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2.3",
+    "entityType" : "CheckActiveUser",
+    "entityId" : "89975f6f-ef9a-4d17-8104-d3e91e9d2dab",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "89975f6f-ef9a-4d17-8104-d3e91e9d2dab",
+    "outcomes" : [ "active", "inactive" ],
+    "_type" : {
+      "_id" : "CheckActiveUser",
+      "name" : "Check Active User",
+      "collection" : true
+    }
+  }
+}

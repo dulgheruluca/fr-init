@@ -1,0 +1,18 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2.3",
+    "entityType" : "ValidateDecision",
+    "entityId" : "2ef44d02-9817-4032-a96a-4d79fb0f414a",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "2ef44d02-9817-4032-a96a-4d79fb0f414a",
+    "outcomes" : [ "valid", "invalid" ],
+    "_type" : {
+      "_id" : "ValidateDecision",
+      "name" : "Validate Decision",
+      "collection" : true
+    }
+  }
+}

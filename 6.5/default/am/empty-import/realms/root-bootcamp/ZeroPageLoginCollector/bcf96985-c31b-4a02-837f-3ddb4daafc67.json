@@ -1,0 +1,21 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2.3",
+    "entityType" : "ZeroPageLoginCollector",
+    "entityId" : "bcf96985-c31b-4a02-837f-3ddb4daafc67",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "bcf96985-c31b-4a02-837f-3ddb4daafc67",
+    "usernameHeader" : "X-OpenAM-Username",
+    "referrerWhiteList" : [ ],
+    "allowWithoutReferer" : true,
+    "passwordHeader" : "X-OpenAM-Password",
+    "_type" : {
+      "_id" : "ZeroPageLoginNode",
+      "name" : "Zero Page Login Collector",
+      "collection" : true
+    }
+  }
+}

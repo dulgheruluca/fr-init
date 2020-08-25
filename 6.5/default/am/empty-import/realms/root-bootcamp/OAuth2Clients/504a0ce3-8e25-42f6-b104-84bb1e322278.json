@@ -1,0 +1,57 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2.3",
+    "entityType" : "OAuth2Clients",
+    "entityId" : "504a0ce3-8e25-42f6-b104-84bb1e322278",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "504a0ce3-8e25-42f6-b104-84bb1e322278",
+    "signEncOAuth2ClientConfig" : {
+      "idTokenEncryptionMethod" : "A128CBC-HS256",
+      "idTokenEncryptionAlgorithm" : "RSA-OAEP-256",
+      "userinfoResponseFormat" : "JSON",
+      "mTLSTrustedCert" : "MIIFDjCCAvagAwIBAgIJAJTkL5DIl99cMA0GCSqGSIb3DQEBCwUAMBwxGjAYBgNVBAMMEWl0c21hcnRzeXN0ZW1zLmV1MB4XDTIwMDQyNTE2NDU0MFoXDTIxMTIxNjE2NDU0MFowHDEaMBgGA1UEAwwRaXRzbWFydHN5c3RlbXMuZXUwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQC4IwqwfzL1DKg9QV6iBXN29Tl1+Er3kh9Yl+twftMaz6j3tZoR5QMAzVsIslzvzlKF09DSlHHLOTlhGN3FQ7C532ItCqDJAA67sIhVc7IqqiAzHjHIEhuwGRA4TkO7T9y6uI7gyymINqXz2jCH/wjYtQCAeFvijfbuMT3EN7U1OGUybVU6+Jzaiz1fvihgGHedLeUISo2StVKeuDBTAEHhHTK9SfXmED1lJozd8x3+uFVQrTToFZpq2smcFxWR9Gn6Urq+M8NyRsKz9DukY+xIAxO/sSKboFUsD5L/07PiQ56ssgBFAlvVkij7NYj3Jp7bAdR55zwb9AtazSL8Iw6JgDbwZ95gHK/B8P06/2n30WjDGG7sNKzOo2zm1sSV6IGmyxDx9iqs+A8V/GSgEh3wDVVEC9lPt3hVCNksszfSSsiKXFMO8Na+iTYNsNq4+COXFBr8Hk067SmVne+cbNto2/MbGfnJguqLHJwzA98a5e8YcCEA6DYDk9EgUWAWOSIECssWBznBLvQfCD0CJOdOtAVv2tBBIzOZVpnXDWheVPsDS1E6J7qCKGRPqExA/dfu2uSZ9lBTVhYPWiZSk3brScU5M7CnRZzd6J6UbYXVrrso1lkbtuZCRWLyXfv3vdyr4n9FhZUN3/NLUO59WH7/VY7KLfRzEBv5F031bh8PCwIDAQABo1MwUTAdBgNVHQ4EFgQUw2l1VMl6j8hRhcRMJ+dsjS0hk04wHwYDVR0jBBgwFoAUw2l1VMl6j8hRhcRMJ+dsjS0hk04wDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEACAOsX7/l/hRfRYKZF/GbKgTAfAWeUmh7OnjEARjEfhZVhEtJY5WANYVmIoIPrWdttp9GUDRAB7YhvqVZaB8lMJsH+9bi0nENWm/F22sK5LAQX4E0X0UiLEl+rP5qy1pthS+zl0QI0Bu5HHWjXSYiXDP/I0iCZQLT6xJGoP9JyF3P5hX0VZuyHoTghima/XMH/cO5xCH+/61ymApKW0WX+Vi1Xhr13dIq8T7fA3sMatQwfwd4AnDN/THEWvSvlT2dF1mfP5PuM4BqZmblLoRqsat78HT4fKrsv4/EnOUatSvYm6rMuv64QFT2cxez2XIalgmFB5y6raZ8/ShMmbSPCzGjoUHu2uvOlw8cWJJ7c8E9PG7g3erMLtwUu2ZpQop+PGmtYXMTBkkf1LaIqXHob1Qybn7sQynXvT5jg1Kb1FBxCOWZ2dZHatI7guMS4c2+gors6Va5WocYxb3lwt3mquVaBkZmLcPPjTqgQ7haeBvzyLNzFNfAYY5ZUOmdhSYG8Q55qIoKa4lekaDAlkSImykJ4CjIMfdg+1eZcIUX4U0GeR5xhzLhlpF3A2FvTPNc0PQpfnvUWqBAHLtcf8I1I9yzxzo1R+lGWnTb0yHPP3Be/hTuJAxNxN19JV6iUffC9yXY5cs7flWJQ2iRNgyYneDjNNB+Or/gqv+zw74vdaA=",
+      "userinfoSignedResponseAlg" : null,
+      "requestParameterEncryptedAlg" : null,
+      "mTLSSubjectDN" : "CN=Test EC",
+      "idTokenSignedResponseAlg" : "RS256",
+      "idTokenEncryptionEnabled" : false,
+      "userinfoEncryptedResponseEncryptionAlgorithm" : null,
+      "publicKeyLocation" : "x509",
+      "userinfoEncryptedResponseAlg" : null,
+      "mTLSCertificateBoundAccessTokens" : true,
+      "requestParameterSignedAlg" : null
+    },
+    "advancedOAuth2ClientConfig" : {
+      "grantTypes" : [ "refresh_token", "authorization_code" ],
+      "updateAccessToken" : "1n4tCOYiZDiwAzdprXa2e0LShLY",
+      "responseTypes" : [ "code" ],
+      "subjectType" : "public",
+      "tokenEndpointAuthMethod" : "self_signed_tls_client_auth"
+    },
+    "coreOAuth2ClientConfig" : {
+      "clientType" : "Confidential",
+      "userpassword" : null,
+      "scopes" : [ "openid" ],
+      "authorizationCodeLifetime" : 0,
+      "accessTokenLifetime" : 0,
+      "refreshTokenLifetime" : 0,
+      "defaultScopes" : [ ],
+      "redirectionUris" : [ "https://www.google.com" ],
+      "status" : "Active"
+    },
+    "coreOpenIDClientConfig" : {
+      "jwtTokenLifetime" : 0,
+      "defaultAcrValues" : [ ],
+      "defaultMaxAgeEnabled" : false,
+      "defaultMaxAge" : 1
+    },
+    "_type" : {
+      "_id" : "OAuth2Client",
+      "name" : "OAuth2 Clients",
+      "collection" : true
+    }
+  }
+}

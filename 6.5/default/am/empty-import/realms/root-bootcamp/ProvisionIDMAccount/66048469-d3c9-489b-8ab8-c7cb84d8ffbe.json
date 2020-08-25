@@ -1,0 +1,18 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2.3",
+    "entityType" : "ProvisionIDMAccount",
+    "entityId" : "66048469-d3c9-489b-8ab8-c7cb84d8ffbe",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "66048469-d3c9-489b-8ab8-c7cb84d8ffbe",
+    "accountProviderClass" : "org.forgerock.openam.authentication.modules.common.mapping.DefaultAccountProvider",
+    "_type" : {
+      "_id" : "ProvisionIdmAccountNode",
+      "name" : "Provision IDM Account",
+      "collection" : true
+    }
+  }
+}

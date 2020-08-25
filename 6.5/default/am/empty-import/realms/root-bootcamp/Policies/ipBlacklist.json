@@ -1,0 +1,44 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2.3",
+    "entityType" : "Policies",
+    "entityId" : "ipBlacklist",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "ipBlacklist",
+    "name" : "ipBlacklist",
+    "active" : true,
+    "description" : "",
+    "resources" : [ "https://homebank.ro:443/dashboard" ],
+    "applicationName" : "bootCamp",
+    "actionValues" : {
+      "POST" : false,
+      "GET" : false
+    },
+    "subject" : {
+      "type" : "NOT",
+      "subject" : {
+        "type" : "NONE"
+      }
+    },
+    "condition" : {
+      "type" : "IPv4",
+      "startIp" : "10.1.0.0",
+      "endIp" : "10.5.0.0",
+      "ipRange" : [ ],
+      "dnsName" : [ ]
+    },
+    "resourceTypeUuid" : "76656a38-5f8e-401b-83aa-4ccb74ce88d2",
+    "resourceAttributes" : [ {
+      "type" : "Static",
+      "propertyName" : "isBlacklisted",
+      "propertyValues" : [ "true" ]
+    } ],
+    "lastModifiedBy" : "id=amAdmin,ou=user,dc=openam,dc=forgerock,dc=org",
+    "lastModifiedDate" : "2020-08-05T08:37:32.832Z",
+    "createdBy" : "id=amAdmin,ou=user,dc=openam,dc=forgerock,dc=org",
+    "creationDate" : "2020-08-05T07:55:44.680Z"
+  }
+}

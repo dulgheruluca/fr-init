@@ -1,0 +1,37 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2.3",
+    "entityType" : "AuthTree",
+    "entityId" : "clientAuthentication",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "clientAuthentication",
+    "nodes" : {
+      "f2f1ed27-4a36-45f8-aaac-8e977b805604" : {
+        "displayName" : "Username Collector",
+        "nodeType" : "UsernameCollectorNode",
+        "connections" : {
+          "outcome" : "696c6f2d-b19b-4292-8b67-8fdcacb1be72"
+        }
+      },
+      "696c6f2d-b19b-4292-8b67-8fdcacb1be72" : {
+        "displayName" : "Password Collector",
+        "nodeType" : "PasswordCollectorNode",
+        "connections" : {
+          "outcome" : "89edd441-d506-4cfd-bded-74c7e85910ce"
+        }
+      },
+      "89edd441-d506-4cfd-bded-74c7e85910ce" : {
+        "displayName" : "Data Store Decision",
+        "nodeType" : "DataStoreDecisionNode",
+        "connections" : {
+          "true" : "70e691a5-1e33-4ac3-a356-e7b6d60d92e0",
+          "false" : "e301438c-0bd0-429c-ab0c-66126501069a"
+        }
+      }
+    },
+    "entryNodeId" : "f2f1ed27-4a36-45f8-aaac-8e977b805604"
+  }
+}

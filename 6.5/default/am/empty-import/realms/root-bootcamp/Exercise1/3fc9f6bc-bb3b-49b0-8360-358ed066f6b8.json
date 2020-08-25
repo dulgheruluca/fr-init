@@ -1,0 +1,18 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2.3",
+    "entityType" : "Exercise1",
+    "entityId" : "3fc9f6bc-bb3b-49b0-8360-358ed066f6b8",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "3fc9f6bc-bb3b-49b0-8360-358ed066f6b8",
+    "deviceHeader" : "deviceHeader",
+    "_type" : {
+      "_id" : "Exercise1",
+      "name" : "Exercise1",
+      "collection" : true
+    }
+  }
+}

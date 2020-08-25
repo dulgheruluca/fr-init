@@ -1,0 +1,31 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2.3",
+    "entityType" : "AuthTree",
+    "entityId" : "Agent",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "Agent",
+    "nodes" : {
+      "f21e8590-0435-4e41-8b57-2a4fd3fc68e5" : {
+        "displayName" : "Agent Data Store Decision",
+        "nodeType" : "AgentDataStoreDecisionNode",
+        "connections" : {
+          "true" : "70e691a5-1e33-4ac3-a356-e7b6d60d92e0",
+          "false" : "e301438c-0bd0-429c-ab0c-66126501069a"
+        }
+      },
+      "8d5225b3-9994-4d4f-83bd-3fbe8e694712" : {
+        "displayName" : "Zero Page Login Collector",
+        "nodeType" : "ZeroPageLoginNode",
+        "connections" : {
+          "true" : "f21e8590-0435-4e41-8b57-2a4fd3fc68e5",
+          "false" : "e301438c-0bd0-429c-ab0c-66126501069a"
+        }
+      }
+    },
+    "entryNodeId" : "8d5225b3-9994-4d4f-83bd-3fbe8e694712"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2.3",
+    "entityType" : "AuthTree",
+    "entityId" : "otpTree",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "otpTree",
+    "nodes" : {
+      "390bc9bb-e0e0-4094-8729-1761a8db729e" : {
+        "displayName" : "Collector Email Phone",
+        "nodeType" : "CollectorEmailPhone",
+        "connections" : {
+          "outcome" : "39950a7f-b711-44ae-950a-7ebb652d8c54"
+        }
+      },
+      "39950a7f-b711-44ae-950a-7ebb652d8c54" : {
+        "displayName" : "Check Valid User",
+        "nodeType" : "CheckValidUser",
+        "connections" : {
+          "found" : "bc50cd88-648c-4835-9299-2438b864f681",
+          "not_found" : "e301438c-0bd0-429c-ab0c-66126501069a"
+        }
+      },
+      "bc50cd88-648c-4835-9299-2438b864f681" : {
+        "displayName" : "HOTP Generator",
+        "nodeType" : "OneTimePasswordGeneratorNode",
+        "connections" : {
+          "outcome" : "344ccaa6-2822-4376-812b-3b8ad0b5cb9c"
+        }
+      },
+      "344ccaa6-2822-4376-812b-3b8ad0b5cb9c" : {
+        "displayName" : "OTP Email Sender",
+        "nodeType" : "OneTimePasswordSmtpSenderNode",
+        "connections" : {
+          "outcome" : "2e599032-9501-498c-93d5-498504b47038"
+        }
+      },
+      "2e599032-9501-498c-93d5-498504b47038" : {
+        "displayName" : "OTP Collector Decision",
+        "nodeType" : "OneTimePasswordCollectorDecisionNode",
+        "connections" : {
+          "false" : "5a248e4e-5858-4de3-a25a-d3f9070cfd1d",
+          "true" : "2ef44d02-9817-4032-a96a-4d79fb0f414a"
+        }
+      },
+      "5a248e4e-5858-4de3-a25a-d3f9070cfd1d" : {
+        "displayName" : "Retry Limit Decision",
+        "nodeType" : "RetryLimitDecisionNode",
+        "connections" : {
+          "Retry" : "bc50cd88-648c-4835-9299-2438b864f681",
+          "Reject" : "e301438c-0bd0-429c-ab0c-66126501069a"
+        }
+      },
+      "2ef44d02-9817-4032-a96a-4d79fb0f414a" : {
+        "displayName" : "Validate Decision",
+        "nodeType" : "ValidateDecision",
+        "connections" : {
+          "invalid" : "e301438c-0bd0-429c-ab0c-66126501069a",
+          "valid" : "9d29bb02-a20b-4db6-8a3d-ac5b004cab16"
+        }
+      },
+      "9d29bb02-a20b-4db6-8a3d-ac5b004cab16" : {
+        "displayName" : "Modify Auth Level",
+        "nodeType" : "ModifyAuthLevelNode",
+        "connections" : {
+          "outcome" : "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+        }
+      }
+    },
+    "entryNodeId" : "390bc9bb-e0e0-4094-8729-1761a8db729e"
+  }
+}

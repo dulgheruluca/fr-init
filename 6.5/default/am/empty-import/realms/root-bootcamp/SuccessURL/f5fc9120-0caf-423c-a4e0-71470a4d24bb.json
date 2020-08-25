@@ -1,0 +1,18 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2.3",
+    "entityType" : "SuccessURL",
+    "entityId" : "f5fc9120-0caf-423c-a4e0-71470a4d24bb",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "f5fc9120-0caf-423c-a4e0-71470a4d24bb",
+    "successUrl" : "https://www.forgerock.com/",
+    "_type" : {
+      "_id" : "SetSuccessUrlNode",
+      "name" : "Success URL",
+      "collection" : true
+    }
+  }
+}

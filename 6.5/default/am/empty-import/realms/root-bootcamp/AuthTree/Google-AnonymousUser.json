@@ -1,0 +1,37 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2.3",
+    "entityType" : "AuthTree",
+    "entityId" : "Google-AnonymousUser",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "Google-AnonymousUser",
+    "nodes" : {
+      "3320e0b0-592f-4888-998f-899733e7c98b" : {
+        "displayName" : "Map to Anonymous User",
+        "nodeType" : "AnonymousUserNode",
+        "connections" : {
+          "outcome" : "f5fc9120-0caf-423c-a4e0-71470a4d24bb"
+        }
+      },
+      "f5fc9120-0caf-423c-a4e0-71470a4d24bb" : {
+        "displayName" : "Set Success URL",
+        "nodeType" : "SetSuccessUrlNode",
+        "connections" : {
+          "outcome" : "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+        }
+      },
+      "d7ea6916-8a35-48fd-9982-d1c4042d0ac9" : {
+        "displayName" : "Google Social Authentication",
+        "nodeType" : "SocialGoogleNode",
+        "connections" : {
+          "NO_ACCOUNT" : "3320e0b0-592f-4888-998f-899733e7c98b",
+          "ACCOUNT_EXISTS" : "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+        }
+      }
+    },
+    "entryNodeId" : "d7ea6916-8a35-48fd-9982-d1c4042d0ac9"
+  }
+}

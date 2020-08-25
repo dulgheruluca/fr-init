@@ -1,0 +1,18 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2.3",
+    "entityType" : "HOTPGenerator",
+    "entityId" : "942dc79b-ae6d-4c66-8968-8cb766ee7c25",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "942dc79b-ae6d-4c66-8968-8cb766ee7c25",
+    "length" : 8,
+    "_type" : {
+      "_id" : "OneTimePasswordGeneratorNode",
+      "name" : "HOTP Generator",
+      "collection" : true
+    }
+  }
+}

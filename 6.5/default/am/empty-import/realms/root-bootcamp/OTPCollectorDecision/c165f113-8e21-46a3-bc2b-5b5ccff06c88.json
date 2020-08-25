@@ -1,0 +1,18 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2.3",
+    "entityType" : "OTPCollectorDecision",
+    "entityId" : "c165f113-8e21-46a3-bc2b-5b5ccff06c88",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "c165f113-8e21-46a3-bc2b-5b5ccff06c88",
+    "passwordExpiryTime" : 5,
+    "_type" : {
+      "_id" : "OneTimePasswordCollectorDecisionNode",
+      "name" : "OTP Collector Decision",
+      "collection" : true
+    }
+  }
+}
