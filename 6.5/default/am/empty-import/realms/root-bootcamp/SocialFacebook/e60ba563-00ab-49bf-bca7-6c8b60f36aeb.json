@@ -8,7 +8,7 @@
   },
   "data" : {
     "_id" : "e60ba563-00ab-49bf-bca7-6c8b60f36aeb",
-    "redirectURI" : "http://localhost:9090/openam",
+    "redirectURI" : "http://login.bootcamp.example.com",
     "authenticationIdKey" : "id",
     "clientId" : "aClientId",
     "basicAuth" : true,

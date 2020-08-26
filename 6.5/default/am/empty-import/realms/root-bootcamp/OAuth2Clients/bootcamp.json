@@ -28,7 +28,7 @@
       "idTokenSignedResponseAlg" : "RS256",
       "idTokenPublicEncryptionKey" : null,
       "userinfoEncryptedResponseAlg" : null,
-      "jwksUri" : "http://localhost:9090/openam/oauth2/bootcamp/connect/jwk_uri",
+      "jwksUri" : "http://login.bootcamp.example.com/oauth2/bootcamp/connect/jwk_uri",
       "requestParameterSignedAlg" : null,
       "clientJwtPublicKey" : null
     },
